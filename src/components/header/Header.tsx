@@ -1,22 +1,29 @@
-function Header() {
+// MovieTracker.tsx
+
+import React from "react";
+
+const MovieTracker: React.FC = () => {
   return (
-    <div className="flex items-center">
-      <div className="w-130 h-106 relative mt-3 ml-10 top-4 left-8 font-caros-bold text-2xl font-semibold leading-21.56px text-black">
-        <h1 className="text-left">
-          The <br />
-          Movie <br />
-          Tracker
+    <div className="flex w-screen h-screen bg-gray-200">
+      {/* Heading */}
+      <div className="flex-shrink-0 w-1/5 p-4 mx-12 text-white">
+        <h1 className="text-3xl font-bold text-black font-caros-bold">
+          The
+          <br /> Movie
+          <br /> Tracker
         </h1>
       </div>
-      <div className="w-60 h-50 ml-auto">
+
+      {/* Search Bar */}
+      <div className="flex-grow p-4">
         <input
           type="text"
-          className="w-full p-3 border border-gray-300 bg-gray-200 rounded-md focus:outline-none focus:border-blue-500 transition-all duration-300 ease-out text-center"
           placeholder="🔍 Search a movie or a series"
+          className="w-1/2 p-2 mt-8 border border-gray-300 rounded-3xl bg-gray-300 text-center text-black-800 focus:outline-none focus:border-blue-500 transition-all duration-300 ease-out"
         />
       </div>
     </div>
   );
-}
+};
 
-export default Header;
+export default MovieTracker;
