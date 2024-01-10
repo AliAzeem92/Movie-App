@@ -1,12 +1,12 @@
 import React from "react";
-import MovieTracker from "./components/header/Header";
-// import Header from "./components/header/Header";
+import Header from "./components/header/Header";
+import Poster from "./components/poster/Poster";
 
 function App() {
   return (
     <div>
-      {/* <Header /> */}
-      <MovieTracker />
+      <Header />
+      <Poster />
     </div>
   );
 }

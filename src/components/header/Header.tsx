@@ -2,12 +2,12 @@
 
 import React from "react";
 
-const MovieTracker: React.FC = () => {
+const Header: React.FC = () => {
   return (
-    <div className="flex w-screen h-screen bg-gray-200">
+    <div className="flex w-screen">
       {/* Heading */}
-      <div className="flex-shrink-0 w-1/5 p-4 mx-12 text-white">
-        <h1 className="text-3xl font-bold text-black font-caros-bold">
+      <div className="flex-shrink-0 p-4 mx-12 text-white">
+        <h1 className="text-[35px] font-bold text-black font-caros-bold">
           The
           <br /> Movie
           <br /> Tracker
@@ -19,11 +19,11 @@ const MovieTracker: React.FC = () => {
         <input
           type="text"
           placeholder="🔍 Search a movie or a series"
-          className="w-1/2 p-2 mt-8 border border-gray-300 rounded-3xl bg-gray-300 text-center text-black-800 focus:outline-none focus:border-blue-500 transition-all duration-300 ease-out"
+          className="w-[630px] h-[57px] p-2 mt-8 mx-[245px] border border-gray-300 rounded-3xl bg-[#D9D9D9] text-center text-black-800 focus:outline-none focus:border-blue-500 transition-all duration-300 ease-out"
         />
       </div>
     </div>
   );
 };
 
-export default MovieTracker;
+export default Header;
